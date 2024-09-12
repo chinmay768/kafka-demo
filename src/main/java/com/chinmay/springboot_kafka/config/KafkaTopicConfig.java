@@ -13,4 +13,9 @@ public class KafkaTopicConfig {
 //        return TopicBuilder.name("chinmay").partitions(10).build();
         return TopicBuilder.name("chinmay").build();
     }
+
+    @Bean
+    public NewTopic chinmayJsonTopic() {
+        return TopicBuilder.name("chinmay_json").build();
+    }
 }
